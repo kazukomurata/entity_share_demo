@@ -188,8 +188,8 @@ display:
             group_items: {  }
           min_length: null
           fields:
-            field_text_demo: field_text_demo
-            field_text_demo_1: field_text_demo_1
+            - field_text_demo
+            - field_text_demo_1
           plugin_id: search_api_fulltext
       sorts: {  }
       header: {  }
