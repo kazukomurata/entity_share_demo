@@ -6,8 +6,19 @@ services:
   mailhog:
     type: mailhog
     portforward: true
+    hogfrom:
+      - appserver
   database:
     portforward: 33336
+    run_as_root:
+      # Create extra databases.
+      - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS drupal9_server; GRANT ALL PRIVILEGES ON drupal9_server.* TO 'drupal9'@'%' IDENTIFIED by 'drupal9';"
+      - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS drupal9_client; GRANT ALL PRIVILEGES ON drupal9_client.* TO 'drupal9'@'%' IDENTIFIED by 'drupal9';"
+proxy:
+  appserver:
+    - default.entitytest.lndo.site
+    - client.entitytest.lndo.site
+    - server.entitytest.lndo.site
 tooling:
   xdebug-on:
     service: appserver
