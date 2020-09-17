@@ -1,0 +1,9 @@
+default:
+  root: /app/web
+  uri: https://default.entitytest.lndo.site
+client:
+  root: /app/web
+  uri: https://client.entitytest.lndo.site
+server:
+  root: /app/web
+  uri: https://server.entitytest.lndo.site
