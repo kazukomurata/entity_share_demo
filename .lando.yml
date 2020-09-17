@@ -1,0 +1,21 @@
+name: entitytest
+recipe: drupal9
+config:
+  webroot: ./web
+services:
+  mailhog:
+    type: mailhog
+    portforward: true
+  database:
+    portforward: 33336
+tooling:
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for apache.
+    cmd: "docker-php-ext-enable xdebug && /etc/init.d/apache2 reload"
+    user: root
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for apache.
+    cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
+    user: root
