@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.paragraphed_content_demo.field_media
     - field.field.node.paragraphed_content_demo.field_paragraphs_demo
     - node.type.paragraphed_content_demo
+    - workflows.workflow.editorial
   module:
     - content_moderation
+    - media_library
     - paragraphs
     - path
 _core:
@@ -27,13 +30,20 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media:
+    type: media_library_widget
+    weight: 9
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_paragraphs_demo:
     type: paragraphs
-    weight: 32
+    weight: 8
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -41,29 +51,36 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
     region: content
   langcode:
     type: language_select
-    weight: 2
-    settings: {  }
+    weight: 1
+    settings:
+      include_locked: true
     third_party_settings: {  }
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 10
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 5
     settings:
       display_label: true
     third_party_settings: {  }
@@ -72,32 +89,32 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 6
     settings:
       display_label: true
     third_party_settings: {  }
     region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     region: content
   translation:
-    weight: 10
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       match_limit: 10

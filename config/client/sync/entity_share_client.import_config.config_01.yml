@@ -1,0 +1,22 @@
+uuid: 286f6f03-93f9-459f-9ad8-886d7f3bb9f3
+langcode: ja
+status: true
+dependencies: {  }
+id: config_01
+label: 'config 01'
+import_processor_settings:
+  changed_time:
+    weights:
+      process_entity: 100
+  default_data_processor:
+    weights:
+      is_entity_importable: -10
+      post_entity_save: 0
+      prepare_importable_entity_data: -100
+  entity_reference:
+    max_recursion_depth: -1
+    weights:
+      process_entity: 10
+  physical_file:
+    weights:
+      process_entity: 0

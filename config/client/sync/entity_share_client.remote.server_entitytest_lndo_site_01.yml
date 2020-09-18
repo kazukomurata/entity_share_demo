@@ -1,0 +1,9 @@
+uuid: c6625e40-a1f6-4c33-a818-590933e3e84e
+langcode: ja
+status: true
+dependencies: {  }
+id: server_entitytest_lndo_site_01
+label: server.entitytest.lndo.site_01
+url: 'https://server.entitytest.lndo.site'
+basic_auth_username: drupal9
+basic_auth_password: drupal9

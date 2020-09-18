@@ -1,5 +1,5 @@
 uuid: 90210f3f-2aeb-4fc9-8945-ae40c986fa02
-name: Drupal9
+name: 'Server Drupal9'
 mail: admin@example.com
 slogan: ''
 page:
@@ -9,6 +9,6 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
-default_langcode: ja
+default_langcode: en
 _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

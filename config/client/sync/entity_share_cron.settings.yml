@@ -1,0 +1,38 @@
+cron_interval: 86400
+page_limit: 5
+remotes:
+  server_entitytest_lndo_site_01:
+    enabled: true
+    channels:
+      article_english:
+        enabled: false
+        import_config: config_01
+        operations:
+          create: true
+          update: true
+      article_japanese:
+        enabled: true
+        import_config: config_01
+        operations:
+          create: true
+          update: true
+      basic_block:
+        enabled: false
+        import_config: config_01
+        operations:
+          create: true
+          update: true
+      paragraphed_article_en:
+        enabled: false
+        import_config: config_01
+        operations:
+          create: true
+          update: true
+      paragraphed_article_japanese:
+        enabled: false
+        import_config: config_01
+        operations:
+          create: true
+          update: true
+_core:
+  default_config_hash: 4G3ZLDsRi9C4iY4bCwOic0mB4J30EDCdhYfFHWClXos

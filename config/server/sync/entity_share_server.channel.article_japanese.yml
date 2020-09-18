@@ -1,0 +1,15 @@
+uuid: b29ee8da-aa47-43c2-92c8-c7c15dbbcc8d
+langcode: ja
+status: true
+dependencies: {  }
+id: article_japanese
+label: 'Article Japanese'
+channel_entity_type: node
+channel_bundle: article
+channel_langcode: ja
+channel_filters: null
+channel_groups: null
+channel_sorts: {  }
+channel_searches: null
+authorized_users:
+  60704ec9-c289-4f4e-80ce-c5f67ee6eee3: 60704ec9-c289-4f4e-80ce-c5f67ee6eee3

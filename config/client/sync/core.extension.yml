@@ -18,6 +18,9 @@ module:
   entity_browser: 0
   entity_reference_revisions: 0
   entity_share: 0
+  entity_share_async: 0
+  entity_share_client: 0
+  entity_share_cron: 0
   entity_usage: 0
   field: 0
   field_ui: 0
@@ -26,10 +29,13 @@ module:
   help: 0
   history: 0
   image: 0
+  jsonapi: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -45,6 +51,7 @@ module:
   search: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0

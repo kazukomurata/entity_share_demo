@@ -1,0 +1,11 @@
+uuid: 2466fcfe-bc17-401d-b30c-aa9ebe2830dd
+langcode: ja
+status: true
+dependencies:
+  module:
+    - entity_share_client
+id: entity_import_status.entity_import_status
+target_entity_type_id: entity_import_status
+target_bundle: entity_import_status
+default_langcode: site_default
+language_alterable: false

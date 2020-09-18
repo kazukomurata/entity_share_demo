@@ -1,0 +1,15 @@
+uuid: 97c2f8f4-7a5c-4862-a2a3-d5de6d28e0ff
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphed_article_en
+label: 'Paragraphed article English'
+channel_entity_type: node
+channel_bundle: paragraphed_content_demo
+channel_langcode: en
+channel_filters: null
+channel_groups: null
+channel_sorts: {  }
+channel_searches: null
+authorized_users:
+  60704ec9-c289-4f4e-80ce-c5f67ee6eee3: 60704ec9-c289-4f4e-80ce-c5f67ee6eee3

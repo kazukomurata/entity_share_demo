@@ -5,13 +5,11 @@ url:
   prefixes:
     en: en
     ja: ja
-    de: de
     fr: fr
     '': null
   domains:
     en: ''
     ja: ''
-    de: ''
     fr: ''
 selected_langcode: site_default
 _core:

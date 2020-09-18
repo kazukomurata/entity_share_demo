@@ -1,0 +1,22 @@
+uuid: 6f04bd26-84ea-4795-9fda-abf038355464
+langcode: ja
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.from_library
+id: paragraph.from_library.status
+field_name: status
+entity_type: paragraph
+bundle: from_library
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

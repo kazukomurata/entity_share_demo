@@ -1,0 +1,23 @@
+uuid: fa0850c5-8831-47dc-936c-10dc50d50a63
+langcode: ja
+status: true
+dependencies: {  }
+id: article_english
+label: 'Tag Name'
+channel_entity_type: node
+channel_bundle: article
+channel_langcode: en
+channel_filters:
+  uid_name:
+    path: uid.name
+    operator: '='
+    value:
+      - drupal9
+channel_groups: {  }
+channel_sorts: {  }
+channel_searches:
+  field_tags_name:
+    path: field_tags.name
+    label: 'Tag Name'
+authorized_users:
+  60704ec9-c289-4f4e-80ce-c5f67ee6eee3: 60704ec9-c289-4f4e-80ce-c5f67ee6eee3

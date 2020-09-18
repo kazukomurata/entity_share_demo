@@ -1,0 +1,15 @@
+uuid: 22546bed-d9d6-4b2d-972e-73df61beaa98
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphed_article_japanese
+label: 'Paragraphed article Japanese'
+channel_entity_type: node
+channel_bundle: paragraphed_content_demo
+channel_langcode: ja
+channel_filters: null
+channel_groups: null
+channel_sorts: {  }
+channel_searches: null
+authorized_users:
+  60704ec9-c289-4f4e-80ce-c5f67ee6eee3: 60704ec9-c289-4f4e-80ce-c5f67ee6eee3

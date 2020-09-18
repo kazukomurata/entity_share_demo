@@ -1,0 +1,15 @@
+uuid: 59da0769-783b-493f-8997-87ccd156c2df
+langcode: en
+status: true
+dependencies: {  }
+id: basic_block
+label: 'Basic block'
+channel_entity_type: block_content
+channel_bundle: basic
+channel_langcode: und
+channel_filters: null
+channel_groups: null
+channel_sorts: {  }
+channel_searches: null
+authorized_users:
+  60704ec9-c289-4f4e-80ce-c5f67ee6eee3: 60704ec9-c289-4f4e-80ce-c5f67ee6eee3
